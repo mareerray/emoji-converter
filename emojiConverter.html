@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Emoji Converter</title>
+        <style>
+            input:focus {
+                outline: none; /* Remove default blue outline */
+            }
+        </style>
+    </head>
+    <body style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0; 
+        background: linear-gradient(45deg,rgb(228, 76, 76), rgb(227, 105, 105), rgb(222, 211, 111)); font-family: 'Arial', sans-serif" >
+        <h1 style=" text-align: center;  
+        font-size: 3.5rem; 
+        letter-spacing: 2px; 
+        background: linear-gradient(45deg, rgb(222, 211, 11), rgb(228, 76, 76),  rgb(227, 105, 105), rgb(222, 211, 11)); 
+        border-radius: 5px;
+        margin-top: 20px;
+        color: #333;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        margin-bottom: 20px;">✨Emoji Converter✨</h1>
+
+        <!-- Form to accept input -->
+        <form method="POST" action="/" style="display: flex; flex-direction: column; align-items: center; margin-bottom: 30px;">         
+            <input type="text" name="input-text" placeholder="Enter emoji name" value="{{.InputText}}"
+            style="width: 500px; height: 100px; background-color: whitesmoke; font-size: 26px; text-align: center; padding: 10px; border: 1px solid #ccc; border-radius: 15px;" />
+            <input type="submit" value="Convert" 
+            style="margin-top: 10px; font-size: 1rem; padding: 10px 20px; width: 150px; color: #333; font-size: 18px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(45deg, rgb(222, 211, 11), rgb(255, 165, 0), rgb(255, 140, 0)); 
+            border: none; border-radius: 5px; cursor: pointer;" />
+        </form>
+
+        <!-- Form to display output -->
+        <form style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+            <div style="margin-top: 40px; width: 500px; height: 200px; font-size: 55px; display: flex; justify-content: center; align-items: center;
+            text-align: center; padding: 10px; border: 1px solid #ccc; border-radius: 15px; background-color: whitesmoke; resize: none;">
+            {{.Emoji}}</div>
+        </form>
+    </body>
+</html>
