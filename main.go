@@ -21,7 +21,7 @@ func main() {
 
 		// Template for the HTML page
 		// tmpl:= template.Must(template.ParseFiles("emojiConverter.html"))
-		tmpl, err := template.ParseFiles("emojiConverter.html")
+		tmpl, err := template.ParseFiles("index.html")
 		if err != nil {
 			w.WriteHeader(http.StatusInternalServerError)
 			error500Tmpl.Execute(w, struct {
