@@ -1,4 +1,7 @@
-# ✨Emoji Converter✨		
+# ✨Emoji Converter✨	
+
+Emoji Converter Description
+The Emoji Converter is a simple and interactive webpage that allows users to convert emoji names into their corresponding symbols. Enter an emoji name (e.g., "smile," "heart," "rocket") into the input field, click "Convert," and see the magic happen! If the name is invalid or empty, helpful error messages guide you. Perfect for quick emoji lookups and fun exploration of emojis! 
 
 ## Instructions for Using the Emoji Converter Webpage
 1) Access the Webpage:
