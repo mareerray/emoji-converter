@@ -3,6 +3,33 @@
 Emoji Converter Description
 The Emoji Converter is a simple and interactive webpage that allows users to convert emoji names into their corresponding symbols. Enter an emoji name (e.g., "smile," "heart," "rocket") into the input field, click "Convert," and see the magic happen! If the name is invalid or empty, helpful error messages guide you. Perfect for quick emoji lookups and fun exploration of emojis! 
 
+
+---
+
+## How to Run the Application
+
+1. Clone the repository:
+    ```
+    git clone https://github.com/your-username/emoji-converter.git
+    cd emoji-converter
+    ```
+
+2. Install dependencies:
+    ```
+    go mod tidy
+    ```
+
+3. Run the application:
+    ```
+    go run main.go
+    ```
+
+4. Open your browser and navigate to:
+    ```
+    http://localhost:8080/
+    ```
+
+
 ## Instructions for Using the Emoji Converter Webpage
 1) Access the Webpage:
 
@@ -31,6 +58,19 @@ The Emoji Converter is a simple and interactive webpage that allows users to con
 7) Error Handling:
 
 - If there’s an unexpected issue, "500 - Internal Server Error" will be displayed.
+
+## Features
+
+- Converts emoji names (e.g., "smile") into their corresponding emoji symbols (e.g., 😀).
+- Custom 404 and 500 error pages.
+- Responsive design using CSS.
+
+
+## Future Improvements
+
+- Add support for more emojis.
+- Implement a database to store user input history.
+- Add unit tests for core functionality.
 
 ## Creator: 
 Mayuree Reunsati (April / 2025)
